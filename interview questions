@@ -1,0 +1,19 @@
+1. What is the difference between precision and recall?
+Precision and recall are both metrics used to evaluate the performance of classification models, particularly in binary classification tasks.
+Precision measures the accuracy of positive predictions. It is the ratio of true positives (correctly predicted positive instances) to the total predicted positives (true positives + false positives). High precision means fewer false positives.
+Recall measures the model's ability to identify all relevant instances. It is the ratio of true positives to the total actual positives (true positives + false negatives). High recall means fewer false negatives.
+
+In short:
+Precision: Focuses on the correctness of positive predictions.
+Recall: Focuses on capturing all actual positives.
+A trade-off often exists between the two, depending on the use case.
+
+
+
+2. What is cross-validation, and why is it important in binary classification?
+Cross-validation is a technique used to assess the performance and generalizability of a machine learning model by partitioning the dataset into multiple subsets. The most common method is k-fold cross-validation, where the data is split into k subsets (folds). The model is trained on k-1 folds and validated on the remaining fold, repeating this process k times, with each fold serving as the validation set once.
+Importance in Binary Classification:
+Reduces Overfitting: By testing the model on different subsets, cross-validation ensures the model generalizes well to unseen data, rather than memorizing the training data.
+Reliable Performance Estimation: It provides a more robust estimate of model performance compared to a single train-test split, as it averages results across multiple iterations.
+Optimal Model Selection: Helps in tuning hyperparameters and selecting the best model by evaluating performance consistently across all folds.
+In binary classification, where class imbalance or small datasets are common, cross-validation is particularly important to ensure the model performs well on both classes and avoids bias.
